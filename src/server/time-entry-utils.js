@@ -29,13 +29,6 @@ export function validateWorkDate(current, previous) {
         gs.addErrorMessage('Work date cannot be in the future');
     }
     
-    // Ensure work date is not more than 30 days old
-    const thirtyDaysAgo = new GlideDateTime();
-    thirtyDaysAgo.addDaysLocalTime(-30);
-    
-    if (workDate.before(thirtyDaysAgo)) {
-        gs.addErrorMessage('Work date cannot be more than 30 days old');
-    }
 }
 
 export function setDefaultEmployee(current, previous) {

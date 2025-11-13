@@ -9,17 +9,45 @@ declare global {
                         table: 'sys_module'
                         id: 'eb315cc198e746d9b52d472456334ddd'
                     }
+                    initialize_test: {
+                        table: 'sys_atf_step'
+                        id: '354069a9ba234e88bbcd09d27f127f8f'
+                    }
+                    log_completion: {
+                        table: 'sys_atf_step'
+                        id: '60f9c22c40c247e6a7936122e38fba93'
+                    }
+                    open_created_record: {
+                        table: 'sys_atf_step'
+                        id: '57672f9656484aa4b413889e00486faa'
+                    }
+                    open_new_form: {
+                        table: 'sys_atf_step'
+                        id: '4f282793f9cd4557b082fdb852b9ce20'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: 'b521719fca0840c9ba20b4066cca3f17'
+                    }
+                    set_field_values: {
+                        table: 'sys_atf_step'
+                        id: '8cf7584ad0c04dbd9c6a0c7b5d455c11'
                     }
                     'src_server_time-entry-utils_js': {
                         table: 'sys_module'
                         id: 'e25a82c9d2b34879a06823979c944652'
                     }
+                    submit_form: {
+                        table: 'sys_atf_step'
+                        id: '6f42302fcad44927a07fb4c55025f20f'
+                    }
                     time_entry_calculate_hours: {
                         table: 'sys_script'
                         id: '87bfbf70f14e43b0accbaed4593a82c1'
+                    }
+                    time_entry_form_test: {
+                        table: 'sys_atf_test'
+                        id: '6a92a4bd6bec4ce99da5b7ae41a78988'
                     }
                     time_entry_set_employee: {
                         table: 'sys_script'
@@ -32,6 +60,14 @@ declare global {
                     'time-collection-app': {
                         table: 'sys_ui_page'
                         id: '508e625ae1bf481798845116992a1485'
+                    }
+                    validate_field_values: {
+                        table: 'sys_atf_step'
+                        id: 'e9893ca4004242f2ae8eb5e7d2ede25a'
+                    }
+                    validate_server_record: {
+                        table: 'sys_atf_step'
+                        id: 'ddd23dcd2c8c4db49581e37e3780b3ac'
                     }
                     'x_snc_time_collect/Analytics-BHpd-zHl': {
                         table: 'sys_ux_lib_asset'
@@ -237,12 +273,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '15d3e91906e347ee95d30a9567140ba6'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'ddd23dcd2c8c4db49581e37e3780b3ac'
+                            variable: '67400008676003007ba405225685efa4'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '1d4225bdbe6e42688321326a59980fe0'
                         key: {
                             name: 'x_snc_time_collect_project'
                             element: 'status'
                             value: 'completed'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '1e0d9761c54b4e4d842b603bd5fa0680'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '60f9c22c40c247e6a7936122e38fba93'
+                            variable: '523c79985f30220012b44adb7f46663a'
                         }
                     },
                     {
@@ -270,6 +324,15 @@ declare global {
                             name: 'x_snc_time_collect_project'
                             element: 'start_date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '2d62d3489766445b8d7b218ec76012e3'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '57672f9656484aa4b413889e00486faa'
+                            variable: 'c2eb56e853422110248dddeeff7b1261'
                         }
                     },
                     {
@@ -341,6 +404,15 @@ declare global {
                             name: 'x_snc_time_collect_project'
                             element: 'billing_type'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '35f581ac0eb84f6c8a496f09a0f18abd'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '57672f9656484aa4b413889e00486faa'
+                            variable: 'ad351a4e53a0220002c6435723dc34f0'
                         }
                     },
                     {
@@ -453,6 +525,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '4a04bb1717dd4171a42119fb6a478f42'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '6f42302fcad44927a07fb4c55025f20f'
+                            variable: 'ae8b91c9ffa333008d3f5d9ad53bf1ba'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '4a80bc62c8aa4e9c942983285aeb2786'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '4f282793f9cd4557b082fdb852b9ce20'
+                            variable: '6f2a59a4e7133300b5646ea8c2f6a975'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '4aacab33878e47c98b0b4dbcbe0f22a1'
                         key: {
@@ -528,12 +618,47 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '5b622aa0c7dc4c45bea18538ed99a395'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'ddd23dcd2c8c4db49581e37e3780b3ac'
+                            variable: '6aad5a575360220002c6435723dc34b0'
+                        }
+                    },
+                    {
+                        table: 'sys_element_mapping'
+                        id: '5d7f4b51d1144bf88faf584d8b5ce644'
+                        key: {
+                            field: 'record_id'
+                            id: 'ddd23dcd2c8c4db49581e37e3780b3ac'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '5fd013da16b4464facec08d527bfddb0'
                         key: {
                             name: 'x_snc_time_collect_time_entry'
                             element: 'billable'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '61f41b3ba76542b3b5fccf8ed6fd80f0'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '8cf7584ad0c04dbd9c6a0c7b5d455c11'
+                            variable: 'b3dba2465320220002c6435723dc34f0'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '6379b2ca87364e2e974456a7385f0d9e'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '6f42302fcad44927a07fb4c55025f20f'
+                            variable: 'c796d40497302200abe4bb7503ac4ad8'
                         }
                     },
                     {
@@ -580,11 +705,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '73b5036761884634973eb45a24f33091'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '57672f9656484aa4b413889e00486faa'
+                            variable: '74d6e7a0a3023110571967d1361e616b'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '754822f8e9564564a37af2141e80d2ca'
                         key: {
                             name: 'x_snc_time_collect_time_entry'
                             element: 'billable'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '787946c49e934004867db62b900e4730'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'e9893ca4004242f2ae8eb5e7d2ede25a'
+                            variable: '4aa838f25320220002c6435723dc34e1'
                         }
                     },
                     {
@@ -656,11 +799,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: '8ceaaa62cdc14d73b709c439d7871680'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'ddd23dcd2c8c4db49581e37e3780b3ac'
+                            variable: 'cbddfa135320220002c6435723dc3415'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '8de46470b1734aac99e6ec56f098c14d'
                         key: {
                             name: 'x_snc_time_collect_project'
                             element: 'priority'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '8f592a789b1a4f8cb89361692373e382'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '354069a9ba234e88bbcd09d27f127f8f'
+                            variable: '523c79985f30220012b44adb7f46663a'
                         }
                     },
                     {
@@ -704,6 +865,15 @@ declare global {
                             name: 'x_snc_time_collect_time_entry'
                             element: 'status'
                             value: 'invoiced'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: '98bd4cb961e24a04894b23af0c43a465'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'e9893ca4004242f2ae8eb5e7d2ede25a'
+                            variable: 'c83b5337e7633300e12127d8d2f6a98b'
                         }
                     },
                     {
@@ -765,12 +935,56 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: 'ab204d63d4944f33b9b078dbe30e1cd9'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '57672f9656484aa4b413889e00486faa'
+                            variable: 'b124164e53a0220002c6435723dc34c5'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'ab74e23fb5d3470598c257215c601a01'
                         key: {
                             name: 'x_snc_time_collect_time_entry'
                             element: 'status'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'ad0c0e8c3d7a4bfaac613b9ad25ea91c'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'e9893ca4004242f2ae8eb5e7d2ede25a'
+                            variable: 'a0e13cc35320220002c6435723dc3467'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'aeb934320ef24fa9b2462fc4c2f5444a'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '57672f9656484aa4b413889e00486faa'
+                            variable: '17d732a9c7a333005e5c45b881c26007'
+                        }
+                    },
+                    {
+                        table: 'sys_element_mapping'
+                        id: 'afd377cb4f43472c8dbc4a0ea85c7f0e'
+                        key: {
+                            field: 'record_id'
+                            id: '57672f9656484aa4b413889e00486faa'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'b1b3256feca34c658920e0689d22f203'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '4f282793f9cd4557b082fdb852b9ce20'
+                            variable: '27d4e1c25320220002c6435723dc3486'
                         }
                     },
                     {
@@ -788,6 +1002,15 @@ declare global {
                         key: {
                             name: 'x_snc_time_collect_project'
                             element: 'end_date'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'b4b89d92acc14f44aea4bd27a9b9641a'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'ddd23dcd2c8c4db49581e37e3780b3ac'
+                            variable: 'ff6e125353a0220002c6435723dc3442'
                         }
                     },
                     {
@@ -809,10 +1032,46 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_variable_value'
+                        id: 'bdf9477cc73a4a5692fa4b026193ccea'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '4f282793f9cd4557b082fdb852b9ce20'
+                            variable: '3a662f60a3023110571967d1361e6134'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'c1fe25e839834049964950d21ca885dd'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '57672f9656484aa4b413889e00486faa'
+                            variable: '6e55da4e53a0220002c6435723dc34a0'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'c2d9d5001f624ffeb3887768ce37d848'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '4f282793f9cd4557b082fdb852b9ce20'
+                            variable: 'bb84ed825320220002c6435723dc3400'
+                        }
+                    },
+                    {
                         table: 'sys_user_role'
                         id: 'c49ad74a17c24e88bcc1dfb2800de2d8'
                         key: {
                             name: 'x_snc_time_collect.user'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'c6a754f4c8154542b88fb6497981916d'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: 'ddd23dcd2c8c4db49581e37e3780b3ac'
+                            variable: '52ed1e5b5360220002c6435723dc3421'
                         }
                     },
                     {
@@ -865,6 +1124,15 @@ declare global {
                             name: 'x_snc_time_collect_project'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'd50d635bc52044e4974e9df2df01d1aa'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '8cf7584ad0c04dbd9c6a0c7b5d455c11'
+                            variable: '946f3c1a0f23330072e6452bc4767eda'
                         }
                     },
                     {
@@ -1010,6 +1278,15 @@ declare global {
                             name: 'x_snc_time_collect_project'
                             element: 'end_date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_variable_value'
+                        id: 'fd64e212dd6641d7aab394765cc64ed8'
+                        key: {
+                            document: 'sys_atf_step'
+                            document_key: '8cf7584ad0c04dbd9c6a0c7b5d455c11'
+                            variable: '424ca6465320220002c6435723dc34b5'
                         }
                     },
                 ]
