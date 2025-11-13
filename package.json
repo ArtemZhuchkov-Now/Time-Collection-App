@@ -1,0 +1,22 @@
+{
+    "name": "x-snc-time-collect",
+    "version": "1.0.0",
+    "description": "[BUILD AGENT GENERATED]:  A comprehensive time tracking application for Kimley Horn employees to log work hours, track project time, and manage timesheets for billing and payroll purposes.",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "now-sdk build",
+        "deploy": "now-sdk install",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "dependencies": {
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@servicenow/sdk": "4.0.2",
+        "@servicenow/glide": "26.0.1",
+        "eslint": "8.50.0",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.2"
+    }
+}

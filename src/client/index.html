@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Kimley Horn Time Collection</title>
+    <sdk:now-ux-globals></sdk:now-ux-globals>
+    <script src="main.jsx" type="module"></script>
+</head>
+<body>
+    <div id="root">
+        <div style="padding: 20px; text-align: center;">
+            <div>Loading Kimley Horn Time Collection...</div>
+            <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
+        </div>
+    </div>
+    <script>
+        // Error handling for debugging
+        window.addEventListener('error', function(e) {
+            console.error('Application Error:', e.error);
+            const errorDiv = document.getElementById('error-message');
+            if (errorDiv) {
+                errorDiv.style.display = 'block';
+                errorDiv.textContent = 'Error loading application: ' + e.message;
+            }
+        });
+        
+        // Check if React loaded
+        setTimeout(function() {
+            if (document.getElementById('root').innerHTML.includes('Loading Kimley Horn')) {
+                console.warn('React app may not have loaded properly');
+            }
+        }, 3000);
+    </script>
+</body>
+</html>

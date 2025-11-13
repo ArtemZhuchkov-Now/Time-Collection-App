@@ -1,0 +1,6 @@
+{
+  "scope": "x_snc_time_collect",
+  "scopeId": "7e5240e62f78b210d00abc0cbfa4e3bb",
+  "name": "Time Collect",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
